@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]><html class="ie ie9 lte9" lang="en"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="en"><!--<![endif]--><head dir="ltr">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/1beac94c95" type="text/javascript"></script><script src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/nr-1026.js"></script><script src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/analytics.js" async="" type="text/javascript"></script><script async="" src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/1601661033380488"></script><script src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/fbevents.js" async=""></script><script src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/6798.js" async="" type="text/javascript"></script><script src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/linkid.js" async="" type="text/javascript"></script><script src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/dj_.js" async="" type="text/javascript"></script><script src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/gtm.js" async="" type="text/javascript"></script><script src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/analytics.js" async="" type="text/javascript"></script><script src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/analytics_002.js" async="" type="text/javascript"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XA4GVl5ACwAEV1JQAA=="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,n,e)])}catch(s){try{i("ierr",[s,c.now(),!0])}catch(u){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t){i("err",[t,c.now()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,n,e){u&&(d+=1)}),s.on("fn-err",function(t,n,e){u&&(this.thrown=!0,o(e))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",s)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];n.exports=u;var y=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(m,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":1,"licenseKey":"1beac94c95","agent":"","transactionName":"NQQGYUZWDUNSVUMPWQxOIkBaVBdZXFgYBVkXExdQQ1YRVR1AXgNBEU8NW1BSGwpwWUIURQcWBUdRfg1UVk4ZAVMW","atts":"GUMRFw5MQUhRaUIVUxA+F0FVQwYeVFNDOVsDDx0bR1ISRVZYQw9XDk8GWVtUCENsWUISFFhTXRkWTwFvRkVSFGkRFQVBURkEVUdpWgdYG08GWVtUCENsWUISFFhSUhkWTwFvRkVSFGkRFQVBURkQVUdpWgdYG08XXE5SQQoABhtERQcQSldYWABbbFVYE1gWEkpZQF48U1xYRBNbBxNGDwUbQUNWRxkFQxATAVtAGQFcXFVcOV8GQ14XVlsMU1gbQVcMMgQKW2wcMHQCThxUYlBRVQIfQxpAVnZBA0QWCAdUWBwBXFxVXCYBUlgGVgRWAAVXAVJSAlpUBgNWVgADBlBVUlBaUVwGAhVPEktUaBNFBxM7RkBWF1UdUVISaQ8ACkwaVQ9fUF1EOUQHEBFQR0MGVBEMA1QaQBkGakFEBkJsRUMHQgdPF1BAaA5RXU8ZBVcODRcXDgVPEkBTRkhVFxMWUFpDTVRaRUcKVxs+ClRZUkEKEX5YC1MVDhZeFHYQQ1pRWQtTDBVEBA4XNFhSVVwnew0NARcYFQBfRkREA2kLBUYPFlQMRUFFUktAU1s0UFpZOxtgcgYeHVA1VgUFAEEcEU5VOUMRBBZqR0MCRFYYUANCPQwFW00ZAF9GREQDGBEIHlAWDVIFHxRPBGkXEgFHa0QXUUdTGQFTFj4JVFpOTVNbV0cSUxBPBllbVAhDbFlCEhRYV0gXR1ISHlFaWAVdPQILQFpDEB5FU0USXwEACBcOBk8SQFNGSFQODgdea1QMRV1CREhFBxARUFpDClFfFA1XGkAZBmpBRAZCbEVDB0IHTwNQQGgOUV1PGQJDEAAQXFtZQQoCAhleD1VQVA0EAFsAAwQOVRpAEgFEGkcMQ1pCXglYQFtVGRZEBkEdUl4VRg4AHWpaVg5VEQwVLlkPBBNaRlxDcUBFXgFYDwQKQRQGWRBkXlYFXSMsC1lRFU8SS1RoE0UHEztGQFYXVR1RUhJpDwAKTBpUAlxfRRVcBE5DHFdrQhBVQWlEElcWBEpSUUM8XVJYTkhVCgAUQVFFTUNaTFJEDFtRSBdMVTxFQFNFOUUWABBQGlAGRGxbVghPTAILQEZEBh5RWlgFXRE+C0BAFVkBHxREA0dMCBdqQF4OVWxaXgtfFgQAFw5RAlxAUxtETgA+EUZRRTxDR1dDAxgRBBBqWVYNSR1UWwlVCRI7QERTAkRWUhVcBE5DF1BFGQ1FXmlCCF8WEkYPBRtBSFFpQhVTED4XQVVDBh5AU0M5WwMPHRtXWBZCQFMZFV8YBEYPBQJPEktUaBNFBxM7RkBWF1UdRVISaQ8ACkwaVAtRQ0JSFBgRCB5QFg1SBR8UWBRRQFtGZVFZDWgRGhUVUxNPB0BGRQZeRxhVClkBCjtWW0INREAYWxJfPQILW0dCDlVBFA1XGkAZBmpBRAZCbEVDB0IHTxdQQGgOUV1PGQVeAxEQUEYZAVxcVVwVaRcRAFRAUgcSCQcbRE4APhFGUUU8Q0dXQwMYEQQQallWDUkdVVgTRBEESldYWABbQGlCFlIDFQFRFg1SHBFFUhcYARQWR1FZFx5dQ1o5XxYECUYWDVAcEU5VOUMRBBZqR0MCRFYYRANCPQwFW00ZB0VBV0MPWQxDXgwaAVcFBAYHUgNWVlUEDQZXHBFFUhcYARQWR1FZFx5RWlgFXT0CC0BaQxAeW0JaChRYUEgXTFU8RUBTRTlFFgAQUBpQBkRsW1YIT0wSAURBUg1EWldbSEULGwEXDgNQBR8URANHTA8RWGteF1VeRRVcAk5DHFdrQhBVQWlEElcWBEpSUUM8XVJYTkhFCxsBFw4CVwAfFEQDR0wDCFpXXDxTXENZEkVMCRBYWBVZAR8URANHTAMIWldcPFlXFA1EVA4OB14ZQVIKY1NZCG5JMiAETBxRZAEGBlEdFhgUUHREBkFGU1kSXwMNT1dYWABbc1dRXwFTAl0AVVJTUQcEDgRXWwAGAlJRBQUHUg4EUlMDRhkWRAZBHVVCFEQHDxAbVlsMU1hpVAlDDBUXG0JSEURaVVYKFFhQGUg=","applicationID":"3343327","errorBeacon":"bam.nr-data.net","applicationTime":462}</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  
+<title data-base-title="
+ Homework Assignment 1: WhackAMole | SD1x Courseware | edX">
+  
+ Homework Assignment 1: WhackAMole | Homework Assignment 1: WhackAMole | SD1x Courseware | edX
+</title>
+
+
+      <script type="text/javascript">
+        /* immediately break out of an iframe if coming from the marketing website */
+        (function(window) {
+          if (window.location !== window.top.location) {
+            window.top.location = window.location;
+          }
+        })(this);
+      </script>
+
+  
+
+  <script type="text/javascript" src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/djangojs.js"></script>
+
+  <link rel="icon" type="image/x-icon" href="https://d37djvu3ytnwxt.cloudfront.net/static/images/favicon.c074c912999f.ico">
+
+  
+  
+
+    <link href="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/lms-style-vendor.css" rel="stylesheet" type="text/css">
+
+
+
+  
+  
+
+    <link href="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/lms-main-v1.css" rel="stylesheet" type="text/css">
+
+
+
+
+      
+    <script type="text/javascript" src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/lms-main_vendor.js" charset="utf-8"></script>
+
+
+      
+    <script type="text/javascript" src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/lms-application.js" charset="utf-8"></script>
+
+
+
+  <script>
+    window.baseUrl = "https://d37djvu3ytnwxt.cloudfront.net/static/";
+    (function (require) {
+      require.config({
+          baseUrl: window.baseUrl
+      });
+    }).call(this, require || RequireJS.require);
+  </script>
+  <script type="text/javascript" src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/require-config.js"></script>
+  
+    <script type="text/javascript">
+        (function (require) {
+          require.config({
+              paths: {
+                'js/courseware/courseware_factory': 'js/courseware/courseware_factory.1504fc10caef',
+'draggabilly': 'js/vendor/draggabilly.26caba6f7187',
+'js/courseware/toggle_element_visibility': 'js/courseware/toggle_element_visibility.22ad04bb0497',
+'hls': 'common/js/vendor/hls.b10b9ef4015b',
+'js/courseware/course_home_events': 'js/courseware/course_home_events.f9fa9db95688',
+'js/courseware/link_clicked_events': 'js/courseware/link_clicked_events',
+'moment': 'common/js/vendor/moment-with-locales.084396f4103c',
+'moment-timezone': 'common/js/vendor/moment-timezone-with-data.b062d5eadf09',
+'js/student_account/logistration_factory': 'js/student_account/logistration_factory.a69b77ccb1f5',
+'js/groups/views/cohorts_dashboard_factory': 'js/groups/views/cohorts_dashboard_factory.7bcda6af1f6d',
+'js/dateutil_factory': 'js/dateutil_factory.f141a7899e5d',
+'course_bookmarks/js/views/bookmark_button': 'course_bookmarks/js/views/bookmark_button.ab6b0ad85d15',
+'js/courseware/accordion_events': 'js/courseware/accordion_events.6064c7809de5',
+'js/views/message_banner': 'js/views/message_banner.099aec538f98',
+'js/student_profile/views/learner_profile_factory': 'js/student_profile/views/learner_profile_factory.6efb1ce019a2'
+            }
+          });
+        }).call(this, require || RequireJS.require);
+    </script>
+  
+
+    
+    <script type="text/javascript" src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/lms-modules.js" charset="utf-8"></script><script src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/hls.js" data-requiremodule="hls" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/moment-with-locales.js" data-requiremodule="moment" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/draggabilly.js" data-requiremodule="draggabilly" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script>
+
+
+
+  
+
+  
+
+    <link href="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/lms-style-course-vendor.css" rel="stylesheet" type="text/css">
+
+
+
+
+  
+
+    <link href="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/lms-course.css" rel="stylesheet" type="text/css">
+
+
+
+
+<script type="text/javascript" src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/jquery_002.js"></script>
+<script type="text/javascript" src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/tooltip_manager.js"></script>
+
+<link href="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/jquery.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+.xblock-student_view.xblock-student_view-lti_consumer h2.problem-header{display:inline-block}.xblock-student_view.xblock-student_view-lti_consumer div.problem-progress{display:inline-block;padding-left:5px;color:#666;font-weight:100;font-size:1em}.xblock-student_view.xblock-student_view-lti_consumer div.lti_consumer{margin:0 auto}.xblock-student_view.xblock-student_view-lti_consumer div.lti_consumer .wrapper-lti-link{font-size:14px;background-color:#f6f6f6;padding:20px}.xblock-student_view.xblock-student_view-lti_consumer div.lti_consumer .wrapper-lti-link .lti-link{margin-bottom:0;margin-top:20px;text-align:left}.xblock-student_view.xblock-student_view-lti_consumer div.lti_consumer .wrapper-lti-link .lti-link button{font-size:13px;line-height:20.72px}.xblock-student_view.xblock-student_view-lti_consumer div.lti_consumer .lti-modal{position:fixed;opacity:0;z-index:11000;box-sizing:border-box;margin-left:0;height:auto;padding:8px;border-radius:3px;box-shadow:0 0 5px 0 rgba(0,0,0,0.4);background:#464646;color:#3c3c3c}.xblock-student_view.xblock-student_view-lti_consumer div.lti_consumer .lti-modal .close-modal{display:inline-block;position:absolute;right:0px;top:0px;z-index:100;cursor:pointer;padding:10px;background-color:#fff !important;border:none;text-align:center}.xblock-student_view.xblock-student_view-lti_consumer div.lti_consumer .lti-modal .close-modal .fa{font:normal normal normal 14px/1 FontAwesome;font-size:inherit}.xblock-student_view.xblock-student_view-lti_consumer div.lti_consumer .lti-modal .inner-wrapper{height:100%;padding:0 0 0 0}.xblock-student_view.xblock-student_view-lti_consumer div.lti_consumer form.ltiLaunchForm{display:none}.xblock-student_view.xblock-student_view-lti_consumer div.lti_consumer iframe.ltiLaunchFrame{width:100%;height:100%;display:block;border:0px}.xblock-student_view.xblock-student_view-lti_consumer div.lti_consumer h4.problem-feedback-label{font-weight:100;font-size:1em;font-family:"Source Sans", "Open Sans", Verdana, Geneva, sans-serif, sans-serif}.xblock-student_view.xblock-student_view-lti_consumer div.lti_consumer div.problem-feedback{margin-top:5px;margin-bottom:5px}.lean-overlay{background:transparent;background-image:radial-gradient(circle at 50% 30%, rgba(0,0,0,0.4), rgba(0,0,0,0.6));display:none;height:100%;left:0;position:fixed;top:0;width:100%;z-index:100}
+
+</style>
+
+  
+
+  
+
+  
+
+
+  
+
+
+<!-- begin Segment -->
+<script type="text/javascript">
+  // Asynchronously load Segment's analytics.js library
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
+  analytics.load("8fncv13bt5");
+  analytics.page();
+  }}();
+  // Note: user tracking moved to segment-io-footer.html
+</script>
+<!-- end Segment -->
+
+
+  <meta name="path_prefix" content="">
+  <meta name="google-site-verification" content="_mipQ4AtZQDNmbtOkwehQDOgCxUUV2fb_C0b6wbiRHY">
+
+
+
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style id="ki-zh5-z3o" type="text/css"></style><style id="ki-zh5-zat" type="text/css"></style><script src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/bookmark_button.js" data-requiremodule="course_bookmarks/js/views/bookmark_button" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><script src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/message_banner.js" data-requiremodule="js/views/message_banner" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script></head>
+
+<body class="ltr view-in-course view-courseware courseware  lang_en"><div style="display: none;" id="MathJax_Message"></div>
+
+
+<div id="page-prompt"></div>
+  <div class="window-wrap" dir="ltr">
+    <a class="nav-skip" href="#main">Skip to main content</a>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+<header class="header-global slim" aria-label="Main" role="banner">
+  <div class=" wrapper-header nav-container">
+
+    <h1 class="hd logo-header">
+      <div class="logo">
+        <a href="https://www.edx.org/" itemprop="url">
+          
+              <img src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/logo.png" alt="edX Home Page" itemprop="logo">
+          
+        </a>
+      </div>
+
+      <div class="course-header">
+        <span class="provider">PennX:</span>
+        <span class="course-number">SD1x</span>
+        <span class="course-name">Software Development Fundamentals</span>
+      </div>
+    </h1>
+
+
+      
+
+
+
+
+
+
+    <ol class="user">
+        <li class="primary">
+            <a href="https://courses.edx.org/dashboard" class="user-link">
+                <span class="sr">Dashboard for:</span>
+                
+                <img class="user-image-frame" src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/default_50.png" alt="">
+                <div class="label-username">ouedinous20</div>
+            </a>
+        </li>
+        <li class="primary">
+            <div class="user-menu">
+                <button class="dropdown" aria-expanded="false" aria-haspopup="true">
+                    <span class="sr">More options</span>
+                    <span class="fa fa-sort-desc" aria-hidden="true"></span>
+                </button>
+                <ul class="dropdown-menu" aria-label="More Options" role="menu">
+                    
+                    <li class="dropdown-item item has-block-link"><a href="https://courses.edx.org/dashboard" role="menuitem" class="action dropdown-menuitem">Dashboard</a></li>
+                    <li class="dropdown-item item has-block-link"><a href="https://courses.edx.org/u/ouedinous20" role="menuitem" class="action dropdown-menuitem">Profile</a></li>
+                    <li class="dropdown-item item has-block-link"><a href="https://courses.edx.org/account/settings" role="menuitem" class="action dropdown-menuitem">Account</a></li>
+                
+                    <li class="item"><a href="https://courses.edx.org/logout" role="menuitem" class="dropdown-menuitem">Sign Out</a></li>
+                </ul>
+            </div>
+        </li>
+    </ol>
+
+
+      <a href="https://edx.readthedocs.io/projects/edx-guide-for-students/en/latest/index.html" target="_blank" class="doc-link">Help</a>
+
+
+  </div>
+</header>
+<!--[if lte IE 9]>
+<div class="ie-banner" aria-hidden="true"><strong>Warning:</strong> Your browser is not fully supported. We strongly recommend using <a href="https://www.google.com/chrome" target="_blank">Chrome</a> or <a href="http://www.mozilla.org/firefox" target="_blank">Firefox</a>.</div>
+<![endif]-->
+
+
+
+
+
+
+
+<div class="help-tab">
+  <a href="#help-modal" rel="leanModal" role="button">Support</a>
+</div>
+
+<div id="help-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" tabindex="-1" aria-labelledby="support-platform-name">
+  <div class="inner-wrapper">
+    <button class="close-modal" tabindex="0">
+      <span class="icon fa fa-remove" aria-hidden="true"></span>
+      <span class="sr">
+        Close
+      </span>
+    </button>
+    <div id="help_wrapper">
+
+        <header>
+          <h2 id="support-platform-name">
+        <span class="edx">edX</span> Support
+          </h2>
+          <hr>
+        </header>
+
+    
+
+        <p>For <strong>questions on course lectures, homework, tools, or materials for this course</strong>, post in the <a href="https://courses.edx.org/courses/course-v1:PennX+SD1x+2T2017/discussion/forum/" target="_blank">course discussion forum</a>.
+        </p>
+
+        <p>Have <strong>general questions about edX</strong>? You can find lots of helpful information in the edX <a href="https://www.edx.org/student-faq" id="feedback-faq-link" target="_blank">FAQ</a>.
+          </p>
+
+        <p>Have a <strong>question about something specific</strong>? You can contact the edX general support team directly:</p>
+        <hr>
+
+        <div class="help-buttons">
+            <button type="button" class="" id="feedback_link_problem">Report a problem</button><br>
+            <button type="button" class="" id="feedback_link_suggestion">Make a suggestion</button><br>
+            <button type="button" class="" id="feedback_link_question">Ask a question</button>
+        </div>
+
+        <p class="note">Please note: The edX support team is English 
+speaking. While we will do our best to address your inquiry in any 
+language, our responses will be in English.</p>
+
+    </div>
+
+    <div id="feedback_form_wrapper">
+
+        <header></header>
+
+        <form id="feedback_form" class="feedback_form" method="post" data-remote="true" action="/submit_feedback">
+          <div class="feedback-form-error" aria-live="polite">
+              <div id="feedback_error" class="modal-form-error" tabindex="-1"></div>
+          </div>
+
+          <div class="js-course-id-anchor">
+                  <input name="course_id" value="course-v1:PennX+SD1x+2T2017" type="hidden">
+          </div>
+
+          <label data-field="subject" for="feedback_form_subject">Briefly describe your issue*</label>
+          <input name="subject" id="feedback_form_subject" required="" type="text">
+
+          <label data-field="details" for="feedback_form_details">Tell us the details*</label>
+          <span class="tip" id="feedback_form_details_tip">Describe what
+ you were doing when you encountered the issue. Include any details that
+ will help us to troubleshoot, including error messages that you saw.</span>
+          <textarea name="details" id="feedback_form_details" required="" aria-describedby="feedback_form_details_tip"></textarea>
+
+          <input name="issue_type" type="hidden">
+          <div class="submit">
+            <input name="submit" value="Submit" id="feedback_submit" type="submit">
+          </div>
+        </form>
+    </div>
+
+    <div id="feedback_success_wrapper">
+
+        <header>
+          <h2>Thank You!</h2>
+          <hr>
+        </header>
+
+        <p>
+        Thank you for your inquiry or feedback.  We typically respond to
+ a request within one business day, Monday to Friday.  In the meantime, 
+please review our <a href="https://www.edx.org/student-faq" target="_blank" id="success-feedback-faq-link">detailed FAQs</a> where most questions have already been answered.
+        </p>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    var currentCourseId,
+        courseOptions = [],
+        userAuthenticated = false,
+        courseOptionsLoadInProgress = false,
+        finishedLoadingCourseOptions = false,
+        $helpModal = $("#help-modal"),
+        $closeButton = $("#help-modal .close-modal"),
+        $leanOverlay = $("#lean_overlay"),
+        $feedbackForm = $("#feedback_form"),
+        onModalClose = function() {
+            $closeButton.off("click");
+            $leanOverlay.off("click");
+            $helpModal.attr("aria-hidden", "true");
+            $('area,input,select,textarea,button').removeAttr('tabindex');
+            $(".help-tab a").focus();
+            $leanOverlay.removeAttr('tabindex');
+        },
+        showFeedback = function(event, issue_type, title, subject_label, details_label) {
+            event.preventDefault();
+            DialogTabControls.initializeTabKeyValues("#feedback_form_wrapper", $closeButton);
+            $("#feedback_form input[name='issue_type']").val(issue_type);
+            $("#feedback_form_wrapper header").html("<h2>" + title + "</h2><hr>");
+            $("#feedback_form_wrapper label[data-field='subject']").html(subject_label);
+            $("#feedback_form_wrapper label[data-field='details']").html(details_label);
+            if (userAuthenticated && finishedLoadingCourseOptions && courseOptions.length > 1) {
+                $('.js-course-id-anchor').html([
+                    '<label for="feedback_form_course">' + 'Course' + '</label>',
+                    '<select name="course_id" id="feedback_form_course" class="feedback-form-select">',
+                    courseOptions.join(''),
+                    '</select>'
+                ].join(''));
+            }
+            $("#help_wrapper").css("display", "none");
+            $("#feedback_form_wrapper").css("display", "block");
+            $closeButton.focus();
+        },
+        loadCourseOptions = function() {
+            courseOptionsLoadInProgress = true;
+            $.ajax({
+                url: '/api/enrollment/v1/enrollment',
+                success: function(data) {
+                    var i,
+                        courseDetails,
+                        courseName,
+                        courseId,
+                        option,
+                        defaultOptionText = '\u002D Select \u002D',
+                        markedSelectedOption = false;
+
+                    // Make sure courseOptions is empty before we begin pushing options into it.
+                    courseOptions = [];
+
+                    for (i = 0; i < data.length; i++) {
+                        courseDetails = data[i].course_details;
+                        if (!courseDetails) {
+                            continue;
+                        }
+
+                        courseName = courseDetails.course_name;
+                        courseId = courseDetails.course_id;
+                        if (!(courseName && courseId)) {
+                            continue;
+                        }
+
+                        // Build an option for this course and select it if it's the course we're currently viewing.
+                        if (!markedSelectedOption && courseId === currentCourseId) {
+                            option = buildCourseOption(courseName, courseId, true);
+                            markedSelectedOption = true;
+                        } else {
+                            option = buildCourseOption(courseName, courseId, false);
+                        }
+
+                        courseOptions.push(option);
+                    }
+
+                    // Build the default option and select it if we haven't already selected another option.
+                    option = buildCourseOption(defaultOptionText, '', !markedSelectedOption);
+
+                    // Add the default option to the head of the courseOptions Array.
+                    courseOptions.unshift(option);
+
+                    finishedLoadingCourseOptions = true;
+                },
+                complete: function() {
+                    courseOptionsLoadInProgress = false;
+                }
+            });
+        },
+        buildCourseOption = function(courseName, courseId, selected) {
+            var option = '<option value="' + _.escape(courseId) + '"';
+            if (selected) {
+                option += ' selected';
+            }
+            option += '>' + _.escape(courseName) + '</option>';
+            return option;
+        };
+
+        userAuthenticated = true;
+
+        currentCourseId = "course\u002Dv1:PennX+SD1x+2T2017";
+
+    DialogTabControls.setKeydownListener($helpModal, $closeButton);
+
+    $(".help-tab").click(function() {
+        if (userAuthenticated && !finishedLoadingCourseOptions && !courseOptionsLoadInProgress) {
+            loadCourseOptions();
+        }
+        $helpModal.css("position", "absolute");
+        DialogTabControls.initializeTabKeyValues("#help_wrapper", $closeButton);
+        $(".field-error").removeClass("field-error");
+        $feedbackForm[0].reset();
+        $("#feedback_form input[type='submit']").removeAttr("disabled");
+        $("#feedback_form_wrapper").css("display", "none");
+        $("#feedback_error").css("display", "none");
+        $("#feedback_form_details_tip").css("display", "none");
+        $("#feedback_success_wrapper").css("display", "none");
+        $("#help_wrapper").css("display", "block");
+        $helpModal.attr("aria-hidden", "false");
+        $closeButton.click(onModalClose);
+        $leanOverlay.click(onModalClose);
+        $("button.close-modal").attr('tabindex', 0);
+        $closeButton.focus();
+    });
+
+    $("#feedback_link_problem").click(function(event) {
+        $("#feedback_form_details_tip").css({"display": "block", "padding-bottom": "5px"});
+        showFeedback(
+            event,
+            "problem",
+            "Report a Problem",
+            "Brief description of the problem*" ,
+            "Details of the problem you are encountering*"
+        );
+    });
+    $("#feedback_link_suggestion").click(function(event) {
+        showFeedback(
+            event,
+            "suggestion",
+            "Make a Suggestion",
+            "Brief description of your suggestion*",
+            "Details*"
+        );
+    });
+    $("#feedback_link_question").click(function(event) {
+        showFeedback(
+            event,
+            "question",
+            "Ask a Question",
+            "Brief summary of your question*",
+            "Details*"
+        );
+    });
+    $feedbackForm.submit(function() {
+        $("input[type='submit']", this).attr("disabled", "disabled");
+        $closeButton.focus();
+    });
+    $feedbackForm.on("ajax:complete", function() {
+        $("input[type='submit']", this).removeAttr("disabled");
+    });
+    $feedbackForm.on("ajax:success", function(event, data, status, xhr) {
+        $("#feedback_form_wrapper").css("display", "none");
+        $("#feedback_success_wrapper").css("display", "block");
+        DialogTabControls.initializeTabKeyValues("#feedback_success_wrapper", $closeButton);
+        $closeButton.focus();
+    });
+    $feedbackForm.on("ajax:error", function(event, xhr, status, error) {
+        $(".field-error").removeClass("field-error").removeAttr("aria-invalid");
+        var responseData;
+        try {
+            responseData = jQuery.parseJSON(xhr.responseText);
+        } catch(err) {
+        }
+        if (responseData) {
+            $("[data-field='"+responseData.field+"']").addClass("field-error").attr("aria-invalid", "true");
+            $("#feedback_error").html(responseData.error).stop().css("display", "block");
+        } else {
+            // If no data (or malformed data) is returned, a server error occurred
+            htmlStr = "An error has occurred.";
+            htmlStr += " " + "Please \u003Cbutton type\u003D\u0022button\u0022 id\u003D\u0022feedback_email\u0022\u003Esend us e\u002Dmail\u003C/button\u003E.";
+            $("#feedback_error").html(htmlStr).stop().css("display", "block");
+            $("#feedback_email").click(function(e) {
+                mailto = "mailto:" + "bugs@edx.org" +
+                    "?subject=" + $("#feedback_form input[name='subject']").val() +
+                    "&body=" + $("#feedback_form textarea[name='details']").val();
+                window.open(mailto);
+                e.preventDefault();
+            });
+        }
+        // Make change explicit to assistive technology
+        $("#feedback_error").focus();
+    });
+});
+</script>
+
+
+
+        
+
+
+
+
+
+
+
+
+    <div class="content-wrapper" id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/template" id="image-modal-tpl">
+    <div class="wrapper-modal wrapper-modal-image">
+  <section class="image-link">
+    <%= smallHTML%>
+    <a href="#" class="modal-ui-icon action-fullscreen" role="button">
+      <span class="label">
+        <span class="icon fa fa-arrows-alt fa-large" aria-hidden="true"></span> <%- gettext("Fullscreen") %>
+      </span>
+    </a>
+  </section>
+
+  <section class="image-modal">
+    <section class="image-content">
+      <div class="image-wrapper">
+        <img alt="<%= largeALT %>, <%- gettext('Large') %>" src="<%= largeSRC %>" />
+      </div>
+
+      <a href="#" class="modal-ui-icon action-close" role="button">
+        <span class="label">
+          <span class="icon fa fa-remove fa-large" aria-hidden="true"></span> <%- gettext("Close") %>
+        </span>
+      </a>
+
+      <ul class="image-controls">
+        <li class="image-control">
+          <a href="#" class="modal-ui-icon action-zoom-in" role="button">
+            <span class="label">
+              <span class="icon fa fa fa-search-plus fa-large" aria-hidden="true"></span> <%- gettext("Zoom In") %>
+            </span>
+          </a>
+        </li>
+
+        <li class="image-control">
+          <a href="#" class="modal-ui-icon action-zoom-out is-disabled" aria-disabled="true" role="button">
+            <span class="label">
+              <span class="icon fa fa fa-search-minus fa-large" aria-hidden="true"></span> <%- gettext("Zoom Out") %>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </section>
+</div>
+
+</script>
+<script type="text/template" id="sequence-breadcrumbs-tpl">
+    <% if (unifiedCourseView) { %>
+    <a href="<%- '/courses/' + courseId + '/course/#' + blockId %>">
+        <span class="fa fa-arrow-circle-prev icon" aria-hidden="true" aria-describedby="outline-description"></span>
+        <span class="sr-only" id="outline-description"><%- gettext('Return to course outline') %></span>
+        <b><%- gettext('Outline') %></b>
+    </a>
+    <span> > </span>
+<% } %>
+<span class="position"><%- pathText %></span>
+
+</script>
+
+
+
+
+
+
+
+
+
+<div class="message-banner" aria-live="polite"></div>
+
+  
+
+
+
+
+
+
+
+
+    <nav class="courseware wrapper-course-material" aria-label="Course Material">
+        <div class="course-material">
+            
+            <ol class="tabs course-tabs">
+                
+
+
+
+
+
+  
+  <li class="tab">
+  <a href="https://courses.edx.org/courses/course-v1:PennX+SD1x+2T2017/info" class="">
+  Home
+  </a>
+  </li>
+  
+  <li class="tab">
+  <a href="https://courses.edx.org/courses/course-v1:PennX+SD1x+2T2017/course/" class="active">
+  Course
+      <span class="sr">, current location</span>
+  </a>
+  </li>
+  
+  <li class="tab">
+  <a href="https://courses.edx.org/courses/course-v1:PennX+SD1x+2T2017/discussion/forum/" class="">
+  Discussion
+  </a>
+  </li>
+  
+  <li class="tab">
+  <a href="https://courses.edx.org/courses/course-v1:PennX+SD1x+2T2017/progress" class="">
+  Progress
+  </a>
+  </li>
+  
+  <li class="tab">
+  <a href="https://courses.edx.org/courses/course-v1:PennX+SD1x+2T2017/ef099e9684c545adac5219259776bb68/" class="">
+  Course Slides
+  </a>
+  </li>
+  
+  <li class="tab">
+  <a href="https://courses.edx.org/courses/course-v1:PennX+SD1x+2T2017/240159aa1c0e44c9a3f18a7769b96281/" class="">
+  Course Files
+  </a>
+  </li>
+
+                
+            </ol>
+        </div>
+    </nav>
+
+
+<div class="container">
+  <div class="course-wrapper" role="presentation">
+
+    <section class="course-content" id="course-content">
+        <main id="main" tabindex="-1" aria-label="Content">
+            <div class="path" data-unified-course-view="true">
+    
+    <a href="https://courses.edx.org/courses/course-v1:PennX+SD1x+2T2017/course/#block-v1:PennX+SD1x+2T2017+type@sequential+block@af971c95ae0a429ba9ab7fff54d9bd1b">
+        <span class="fa fa-arrow-circle-prev icon" aria-hidden="true" aria-describedby="outline-description"></span>
+        <span class="sr-only" id="outline-description">Return to course outline</span>
+        <b>Outline</b>
+    </a>
+    <span> &gt; </span>
+
+<span class="position">Week 1: Java Basics &gt; Homework Assignment 1: WhackAMole &gt; Homework Assignment 1: WhackAMole</span>
+
+</div>
+
+              <div class="xblock xblock-student_view xblock-student_view-sequential xmodule_display xmodule_SequenceModule xblock-initialized" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-block-type="sequential" data-request-token="c12c87c840d411e797e40a90582a121a" data-runtime-version="1" data-usage-id="block-v1:PennX+SD1x+2T2017+type@sequential+block@af971c95ae0a429ba9ab7fff54d9bd1b" data-type="Sequence" data-course-id="course-v1:PennX+SD1x+2T2017">
+  
+  
+
+
+<div id="sequence_af971c95ae0a429ba9ab7fff54d9bd1b" class="sequence" data-id="block-v1:PennX+SD1x+2T2017+type@sequential+block@af971c95ae0a429ba9ab7fff54d9bd1b" data-position="1" data-ajax-url="/courses/course-v1:PennX+SD1x+2T2017/xblock/block-v1:PennX+SD1x+2T2017+type@sequential+block@af971c95ae0a429ba9ab7fff54d9bd1b/handler/xmodule_handler" data-next-url="/courses/course-v1:PennX+SD1x+2T2017/courseware/6bf44b6eecab4a0f824ee8ef0949f44b/148f661c7e9a4e27a234ed14b2439c5d/?child=first" data-prev-url="/courses/course-v1:PennX+SD1x+2T2017/courseware/6bf44b6eecab4a0f824ee8ef0949f44b/31a9dc17e0714bd680ba2043ed2087c6/?child=last">
+  <div class="sequence-nav">
+    <button class="sequence-nav-button button-previous" aria-hidden="true">
+      <span class="icon fa fa-chevron-prev" aria-hidden="true"></span>
+      <span>Previous</span>
+    </button>
+    <nav class="sequence-list-wrapper" aria-label="Sequence">
+      <ol id="sequence-list" role="tablist">
+        <li>
+        <button class="seq_other nav-item tab active" role="tab" tabindex="0" aria-selected="true" aria-expanded="true" aria-controls="seq_content" data-index="0" data-id="block-v1:PennX+SD1x+2T2017+type@vertical+block@709bc0ac5d7e4485b6bac35fb4f80836" data-element="1" data-page-title="Homework Assignment 1: WhackAMole" data-path="Week 1: Java Basics &gt; Homework Assignment 1: WhackAMole &gt; Homework Assignment 1: WhackAMole" id="tab_0">
+            <span class="icon fa seq_other" aria-hidden="true"></span>
+            <span class="fa fa-fw fa-bookmark bookmark-icon is-hidden" aria-hidden="true"></span>
+            <div class="sequence-tooltip sr"><span class="sr">other&nbsp;</span>Homework Assignment 1: WhackAMole<span class="sr bookmark-icon-sr">&nbsp;</span></div>
+          </button>
+        </li>
+      </ol>
+    </nav>
+    <button class="sequence-nav-button button-next" aria-hidden="true">
+      <span>Next</span>
+      <span class="icon fa fa-chevron-next" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <div class="sr-is-focusable" tabindex="-1"></div>
+
+  <div id="seq_contents_0" aria-labelledby="tab_0" aria-hidden="true" class="seq_contents tex2jax_ignore asciimath2jax_ignore">
+    &lt;div class="xblock xblock-student_view 
+xblock-student_view-vertical" data-runtime-class="LmsRuntime" 
+data-init="VerticalStudentView" 
+data-course-id="course-v1:PennX+SD1x+2T2017" 
+data-request-token="c12c87c840d411e797e40a90582a121a" 
+data-runtime-version="1" 
+data-usage-id="block-v1:PennX+SD1x+2T2017+type@vertical+block@709bc0ac5d7e4485b6bac35fb4f80836"
+ data-block-type="vertical"&gt;
+  
+
+  &lt;h2 class="hd hd-2 unit-title"&gt;Homework Assignment 1: 
+WhackAMole&lt;/h2&gt;
+
+    
+
+
+
+&lt;div class="bookmark-button-wrapper"&gt;
+  &lt;button class="btn btn-link bookmark-button "
+    aria-pressed="false"
+    
+data-bookmark-id="ouedinous20,block-v1:PennX+SD1x+2T2017+type@vertical+block@709bc0ac5d7e4485b6bac35fb4f80836"
+
+    data-bookmarks-api-url="/api/bookmarks/v1/bookmarks/"&gt;
+     &lt;span class="bookmark-text"&gt;Bookmark this page&lt;/span&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+
+
+&lt;div class="vert-mod"&gt;
+  &lt;div class="vert vert-0" 
+data-id="block-v1:PennX+SD1x+2T2017+type@html+block@66a161062d98498d8e5a1e518466ecdc"&gt;
+
+    &lt;div class="xblock xblock-student_view xblock-student_view-html 
+xmodule_display xmodule_HtmlModule" data-runtime-class="LmsRuntime" 
+data-init="XBlockToXModuleShim" data-block-type="html" 
+data-request-token="c12c87c840d411e797e40a90582a121a" 
+data-runtime-version="1" 
+data-usage-id="block-v1:PennX+SD1x+2T2017+type@html+block@66a161062d98498d8e5a1e518466ecdc"
+ data-type="HTMLModule" data-course-id="course-v1:PennX+SD1x+2T2017"&gt;
+  &lt;script type="json/xblock-args" class="xblock-json-init-args"&gt;
+    {"xmodule-type": "HTMLModule"}
+  &lt;/script&gt;
+  &lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span 
+id="docs-internal-guid-f099e4b0-c455-6ec0-4e49-d93ef81c91d3" 
+style="font-family: arial, helvetica, sans-serif; color: 
+#000000;"&gt;&lt;span style="font-size: 12pt; background-color: 
+transparent; font-variant-ligatures: normal; font-variant-east-asian: 
+normal; font-variant-position: normal; vertical-align: baseline; 
+white-space: pre-wrap;"&gt;In this assignment we will simulate a variant
+ of the classic &lt;a 
+href="https://media.giphy.com/media/MVUyVpyjakkRW/giphy.gif" 
+target="[object Object]"&gt;whack-a-mole 
+game&lt;/a&gt;.&lt;/span&gt;&lt;br /&gt;&lt;span style="font-size: 12pt;
+ background-color: transparent; font-variant-ligatures: normal; 
+font-variant-east-asian: normal; font-variant-position: normal; 
+vertical-align: baseline; white-space: pre-wrap;"&gt;Create a class 
+called &lt;strong&gt;WhackAMole&lt;/strong&gt;.&lt;/span&gt;&lt;br 
+/&gt;&lt;br /&gt;&lt;span style="font-size: 12pt; background-color: 
+transparent; font-variant-ligatures: normal; font-variant-east-asian: 
+normal; font-variant-position: normal; vertical-align: baseline; 
+white-space: pre-wrap;"&gt;It contains three integer instance variables 
+called &lt;/span&gt;&lt;span style="font-size: 12pt; background-color: 
+transparent; font-weight: bold; font-variant-ligatures: normal; 
+font-variant-east-asian: normal; font-variant-position: normal; 
+vertical-align: baseline; white-space: 
+pre-wrap;"&gt;score&lt;/span&gt;&lt;span style="font-size: 12pt; 
+background-color: transparent; font-variant-ligatures: normal; 
+font-variant-east-asian: normal; font-variant-position: normal; 
+vertical-align: baseline; white-space: pre-wrap;"&gt;, 
+&lt;/span&gt;&lt;span style="font-size: 12pt; background-color: 
+transparent; font-weight: bold; font-variant-ligatures: normal; 
+font-variant-east-asian: normal; font-variant-position: normal; 
+vertical-align: baseline; white-space: 
+pre-wrap;"&gt;molesLeft&lt;/span&gt;&lt;span style="font-size: 12pt; 
+background-color: transparent; font-variant-ligatures: normal; 
+font-variant-east-asian: normal; font-variant-position: normal; 
+vertical-align: baseline; white-space: pre-wrap;"&gt;, and 
+&lt;/span&gt;&lt;span style="font-size: 12pt; background-color: 
+transparent; font-weight: bold; font-variant-ligatures: normal; 
+font-variant-east-asian: normal; font-variant-position: normal; 
+vertical-align: baseline; white-space: 
+pre-wrap;"&gt;attemptsLeft&lt;/span&gt;&lt;span style="font-size: 12pt; 
+background-color: transparent; font-variant-ligatures: normal; 
+font-variant-east-asian: normal; font-variant-position: normal; 
+vertical-align: baseline; white-space: pre-wrap;"&gt;. 
+&lt;/span&gt;&lt;span style="font-size: 12pt; background-color: 
+transparent; font-variant-ligatures: normal; font-variant-east-asian: 
+normal; font-variant-position: normal; vertical-align: baseline; 
+white-space: pre-wrap;"&gt;Make one more instance variable called 
+&lt;/span&gt;&lt;span style="font-size: 12pt; background-color: 
+transparent; font-weight: bold; font-variant-ligatures: normal; 
+font-variant-east-asian: normal; font-variant-position: normal; 
+vertical-align: baseline; white-space: 
+pre-wrap;"&gt;moleGrid&lt;/span&gt;&lt;span style="font-size: 12pt; 
+background-color: transparent; font-variant-ligatures: normal; 
+font-variant-east-asian: normal; font-variant-position: normal; 
+vertical-align: baseline; white-space: pre-wrap;"&gt; which is a 
+2-dimensional array of chars.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span 
+id="docs-internal-guid-f099e4b0-c455-6ec0-4e49-d93ef81c91d3" 
+style="font-family: arial, helvetica, sans-serif; color: 
+#000000;"&gt;&lt;br /&gt;&lt;span style="font-size: 12pt; 
+background-color: transparent; font-variant-ligatures: normal; 
+font-variant-east-asian: normal; font-variant-position: normal; 
+vertical-align: baseline; white-space: pre-wrap;"&gt;We will also have 
+you create the following methods in this 
+class.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span 
+id="docs-internal-guid-f099e4b0-c455-6ec0-4e49-d93ef81c91d3" 
+style="font-family: arial, helvetica, sans-serif;"&gt;&lt;br 
+/&gt;&lt;span style="color: #000000;"&gt;&lt;span style="font-size: 
+12pt; background-color: transparent; font-weight: bold; 
+font-variant-ligatures: normal; font-variant-east-asian: normal; 
+font-variant-position: normal; vertical-align: baseline; white-space: 
+pre-wrap;"&gt;WhackAMole(int numAttempts, int 
+gridDimension)&lt;/span&gt;&lt;span style="font-size: 12pt; 
+background-color: transparent; font-variant-ligatures: normal; 
+font-variant-east-asian: normal; font-variant-position: normal; 
+vertical-align: baseline; white-space: pre-wrap;"&gt; - Constructor for 
+the game, specifies total number of whacks allowed, and the grid 
+dimension.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span 
+id="docs-internal-guid-f099e4b0-c455-6ec0-4e49-d93ef81c91d3" 
+style="font-family: arial, helvetica, sans-serif;"&gt;&lt;br 
+/&gt;&lt;span style="color: #000000;"&gt;&lt;em&gt;&lt;span 
+style="font-size: 12pt; background-color: transparent; font-weight: 
+bold; font-variant-ligatures: normal; font-variant-east-asian: normal; 
+font-variant-position: normal; vertical-align: baseline; white-space: 
+pre-wrap;"&gt;boolean&lt;/span&gt;&lt;/em&gt;&lt;span style="font-size: 
+12pt; background-color: transparent; font-weight: bold; 
+font-variant-ligatures: normal; font-variant-east-asian: normal; 
+font-variant-position: normal; vertical-align: baseline; white-space: 
+pre-wrap;"&gt; place(int x, int y)&lt;/span&gt;&lt;span 
+style="font-size: 12pt; background-color: transparent; 
+font-variant-ligatures: normal; font-variant-east-asian: normal; 
+font-variant-position: normal; vertical-align: baseline; white-space: 
+pre-wrap;"&gt; &amp;ndash; Given a location, place a mole at that 
+location. Return true if you can. &lt;/span&gt;&lt;span 
+style="font-size: 12pt; background-color: transparent; 
+font-variant-ligatures: normal; font-variant-east-asian: normal; 
+font-variant-position: normal; vertical-align: baseline; white-space: 
+pre-wrap;"&gt;(Also update number of moles left.)&lt;/span&gt;&lt;span 
+style="font-size: 12pt; background-color: transparent; 
+font-variant-ligatures: normal; font-variant-east-asian: normal; 
+font-variant-position: normal; vertical-align: baseline; white-space: 
+pre-wrap;"&gt; 
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+ id="docs-internal-guid-f099e4b0-c455-6ec0-4e49-d93ef81c91d3" 
+style="font-family: arial, helvetica, sans-serif;"&gt;&lt;br 
+/&gt;&lt;span style="color: #000000;"&gt;&lt;em&gt;&lt;span 
+style="font-size: 12pt; background-color: transparent; font-weight: 
+bold; font-variant-ligatures: normal; font-variant-east-asian: normal; 
+font-variant-position: normal; vertical-align: baseline; white-space: 
+pre-wrap;"&gt;void&lt;/span&gt;&lt;/em&gt;&lt;span style="font-size: 
+12pt; background-color: transparent; font-weight: bold; 
+font-variant-ligatures: normal; font-variant-east-asian: normal; 
+font-variant-position: normal; vertical-align: baseline; white-space: 
+pre-wrap;"&gt; whack(int x, int y)&lt;/span&gt;&lt;span 
+style="font-size: 12pt; background-color: transparent; 
+font-variant-ligatures: normal; font-variant-east-asian: normal; 
+font-variant-position: normal; vertical-align: baseline; white-space: 
+pre-wrap;"&gt; - &amp;nbsp;Given a location, take a whack at that 
+location. If that location contains a mole, the score, number of 
+attemptsLeft, and molesLeft is updated&lt;/span&gt;&lt;span 
+style="font-size: 12pt; background-color: transparent; 
+font-variant-ligatures: normal; font-variant-east-asian: normal; 
+font-variant-position: normal; vertical-align: baseline; white-space: 
+pre-wrap;"&gt;. If that location does not contain a mole, only 
+attemptsLeft is 
+updated.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span 
+id="docs-internal-guid-f099e4b0-c455-6ec0-4e49-d93ef81c91d3" 
+style="font-family: arial, helvetica, sans-serif;"&gt;&lt;br 
+/&gt;&lt;span style="color: #000000;"&gt;&lt;em&gt;&lt;span 
+style="font-size: 12pt; background-color: transparent; font-weight: 
+bold; font-variant-ligatures: normal; font-variant-east-asian: normal; 
+font-variant-position: normal; vertical-align: baseline; white-space: 
+pre-wrap;"&gt;void&lt;/span&gt;&lt;/em&gt;&lt;span style="font-size: 
+12pt; background-color: transparent; font-weight: bold; 
+font-variant-ligatures: normal; font-variant-east-asian: normal; 
+font-variant-position: normal; vertical-align: baseline; white-space: 
+pre-wrap;"&gt; printGridToUser()&lt;/span&gt;&lt;span style="font-size: 
+12pt; background-color: transparent; font-variant-ligatures: normal; 
+font-variant-east-asian: normal; font-variant-position: normal; 
+vertical-align: baseline; white-space: pre-wrap;"&gt; &amp;ndash; Print 
+the grid without showing where the moles are. For every spot that has 
+recorded a &amp;ldquo;whacked mole,&amp;rdquo; print out a W, 
+&lt;/span&gt;&lt;span style="font-size: 12pt; background-color: 
+transparent; font-variant-ligatures: normal; font-variant-east-asian: 
+normal; font-variant-position: normal; vertical-align: baseline; 
+white-space: pre-wrap;"&gt;or * otherwise&lt;/span&gt;&lt;span 
+style="font-size: 12pt; background-color: transparent; 
+font-variant-ligatures: normal; font-variant-east-asian: normal; 
+font-variant-position: normal; vertical-align: baseline; white-space: 
+pre-wrap;"&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span 
+id="docs-internal-guid-f099e4b0-c455-6ec0-4e49-d93ef81c91d3" 
+style="font-family: arial, helvetica, sans-serif;"&gt;&lt;br 
+/&gt;&lt;span style="color: #000000;"&gt;&lt;em&gt;&lt;span 
+style="font-size: 12pt; background-color: transparent; font-weight: 
+bold; font-variant-ligatures: normal; font-variant-east-asian: normal; 
+font-variant-position: normal; vertical-align: baseline; white-space: 
+pre-wrap;"&gt;void&lt;/span&gt;&lt;/em&gt;&lt;span style="font-size: 
+12pt; background-color: transparent; font-weight: bold; 
+font-variant-ligatures: normal; font-variant-east-asian: normal; 
+font-variant-position: normal; vertical-align: baseline; white-space: 
+pre-wrap;"&gt; printGrid()&lt;/span&gt;&lt;span style="font-size: 12pt; 
+background-color: transparent; font-variant-ligatures: normal; 
+font-variant-east-asian: normal; font-variant-position: normal; 
+vertical-align: baseline; white-space: pre-wrap;"&gt; - &amp;nbsp;Print 
+the grid completely. This is effectively dumping the 2d array on the 
+screen. The places where the moles are should be printed as an 
+&amp;lsquo;M&amp;rsquo;. The places where the moles have been whacked 
+should be printed as a &amp;lsquo;W&amp;rsquo;. &lt;/span&gt;&lt;span 
+style="font-size: 12pt; background-color: transparent; 
+font-variant-ligatures: normal; font-variant-east-asian: normal; 
+font-variant-position: normal; vertical-align: baseline; white-space: 
+pre-wrap;"&gt;The places that don&amp;rsquo;t have a mole should be 
+printed as *.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span 
+id="docs-internal-guid-f099e4b0-c455-6ec0-4e49-d93ef81c91d3" 
+style="font-family: arial, helvetica, sans-serif;"&gt;&lt;br 
+/&gt;&lt;strong&gt;&lt;span style="font-size: 12pt; background-color: 
+transparent; font-variant-ligatures: normal; font-variant-east-asian: 
+normal; font-variant-position: normal; vertical-align: baseline; 
+white-space: pre-wrap; color: #000000;"&gt;Putting it all together - 
+main method&lt;/span&gt;&lt;/strong&gt;&lt;br /&gt;&lt;span 
+style="font-size: 12pt; background-color: transparent; 
+font-variant-ligatures: normal; font-variant-east-asian: normal; 
+font-variant-position: normal; vertical-align: baseline; white-space: 
+pre-wrap; color: #000000;"&gt;In order to play this game you need to 
+create a main method. &lt;/span&gt;&lt;br /&gt;&lt;span 
+style="font-size: 12pt; background-color: transparent; 
+font-variant-ligatures: normal; font-variant-east-asian: normal; 
+font-variant-position: normal; vertical-align: baseline; white-space: 
+pre-wrap; color: #000000;"&gt;Begin by creating a 10 by 10 grid where 
+you randomly place the moles. Place a total of 10 
+moles.&lt;/span&gt;&lt;br /&gt;&lt;span style="font-size: 12pt; 
+background-color: transparent; font-variant-ligatures: normal; 
+font-variant-east-asian: normal; font-variant-position: normal; 
+vertical-align: baseline; white-space: pre-wrap; color: #000000;"&gt;Now
+ allow the user (remember how to use Scanner?) to enter the x and y 
+coordinates of where they would like to take a whack. Tell them they 
+have a maximum of 50 attempts to get all the moles. &lt;/span&gt;&lt;br 
+/&gt;&lt;span style="font-size: 12pt; background-color: transparent; 
+font-variant-ligatures: normal; font-variant-east-asian: normal; 
+font-variant-position: normal; vertical-align: baseline; white-space: 
+pre-wrap; color: #000000;"&gt;At any point in the game, they can input 
+coordinates of -1, -1 in order to indicate that they are giving up. If 
+the user gives up they get to see the entire grid. 
+&amp;nbsp;&lt;/span&gt;&lt;br /&gt;&lt;span style="font-size: 12pt; 
+background-color: transparent; font-variant-ligatures: normal; 
+font-variant-east-asian: normal; font-variant-position: normal; 
+vertical-align: baseline; white-space: pre-wrap;"&gt;The game ends if 
+the user is able to uncover all the moles or if the user runs out of 
+attempts. &lt;/span&gt;&lt;span style="font-size: 12pt; 
+background-color: transparent; font-variant-ligatures: normal; 
+font-variant-east-asian: normal; font-variant-position: normal; 
+vertical-align: baseline; white-space: 
+pre-wrap;"&gt;&lt;/span&gt;&lt;span style="font-size: 12pt; color: 
+#000000; background-color: transparent; font-variant-ligatures: normal; 
+font-variant-east-asian: normal; font-variant-position: normal; 
+vertical-align: baseline; white-space: pre-wrap;"&gt;&lt;br 
+/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+  &lt;/div&gt;
+  &lt;div class="vert vert-1" 
+data-id="block-v1:PennX+SD1x+2T2017+type@lti_consumer+block@9194988b0a054d94b567a57837d2ddd1"&gt;
+
+    &lt;div class="xblock xblock-student_view 
+xblock-student_view-lti_consumer" data-runtime-class="LmsRuntime" 
+data-init="LtiConsumerXBlock" 
+data-course-id="course-v1:PennX+SD1x+2T2017" 
+data-request-token="c12c87c840d411e797e40a90582a121a" 
+data-runtime-version="1" 
+data-usage-id="block-v1:PennX+SD1x+2T2017+type@lti_consumer+block@9194988b0a054d94b567a57837d2ddd1"
+ data-block-type="lti_consumer"&gt;
+  &lt;h2 class="problem-header"&gt;
+    LTI Consumer (External resource)
+&lt;/h2&gt;
+
+    &lt;div class="problem-progress"&gt;
+            (1.0 points possible)
+    &lt;/div&gt;
+
+&lt;div
+    id="9194988b0a054d94b567a57837d2ddd1"
+    class="lti_consumer lti-consumer-container"
+    data-ask-to-send-username="True"
+    data-ask-to-send-email="True"
+&gt;
+
+        &lt;section class="wrapper-lti-link"&gt;
+            &lt;p class="lti-link external"&gt;
+                    &lt;button
+                        class="btn btn-pl-primary btn-base 
+btn-lti-new-window"
+                        
+data-target="/courses/course-v1:PennX+SD1x+2T2017/xblock/block-v1:PennX+SD1x+2T2017+type@lti_consumer+block@9194988b0a054d94b567a57837d2ddd1/handler/lti_launch_handler"
+
+                    &gt;
+                        View resource in a new window &lt;i class="icon 
+fa fa-external-link"&gt;&lt;/i&gt;
+                    &lt;/button&gt;
+            &lt;/p&gt;
+        &lt;/section&gt;
+
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+  </div>
+  <div aria-labelledby="tab_0" id="seq_content" role="tabpanel">
+    <div class="xblock xblock-student_view xblock-student_view-vertical xblock-initialized" data-runtime-class="LmsRuntime" data-init="VerticalStudentView" data-course-id="course-v1:PennX+SD1x+2T2017" data-request-token="c12c87c840d411e797e40a90582a121a" data-runtime-version="1" data-usage-id="block-v1:PennX+SD1x+2T2017+type@vertical+block@709bc0ac5d7e4485b6bac35fb4f80836" data-block-type="vertical">
+  
+
+  <h2 class="hd hd-2 unit-title">Homework Assignment 1: WhackAMole</h2>
+
+    
+
+
+
+<div class="bookmark-button-wrapper">
+  <button class="btn btn-link bookmark-button" aria-pressed="false" data-bookmark-id="ouedinous20,block-v1:PennX+SD1x+2T2017+type@vertical+block@709bc0ac5d7e4485b6bac35fb4f80836" data-bookmarks-api-url="/api/bookmarks/v1/bookmarks/">
+     <span class="bookmark-text">Bookmark this page</span>
+    </button>
+</div>
+
+
+<div class="vert-mod">
+  <div class="vert vert-0" data-id="block-v1:PennX+SD1x+2T2017+type@html+block@66a161062d98498d8e5a1e518466ecdc">
+    <div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlModule xblock-initialized" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-block-type="html" data-request-token="c12c87c840d411e797e40a90582a121a" data-runtime-version="1" data-usage-id="block-v1:PennX+SD1x+2T2017+type@html+block@66a161062d98498d8e5a1e518466ecdc" data-type="HTMLModule" data-course-id="course-v1:PennX+SD1x+2T2017">
+  
+  <p></p>
+<p><span id="docs-internal-guid-f099e4b0-c455-6ec0-4e49-d93ef81c91d3" style="font-family: arial, helvetica, sans-serif; color: #000000;"><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">In this assignment we will simulate a variant of the classic <a href="https://media.giphy.com/media/MVUyVpyjakkRW/giphy.gif" target="[object Object]">whack-a-mole game</a>.</span><br><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">Create a class called <strong>WhackAMole</strong>.</span><br><br><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">It contains three integer instance variables called </span><span style="font-size: 12pt; background-color: transparent; font-weight: bold; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">score</span><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">, </span><span style="font-size: 12pt; background-color: transparent; font-weight: bold; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">molesLeft</span><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">, and </span><span style="font-size: 12pt; background-color: transparent; font-weight: bold; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">attemptsLeft</span><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">. </span><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">Make one more instance variable called </span><span style="font-size: 12pt; background-color: transparent; font-weight: bold; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">moleGrid</span><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;"> which is a 2-dimensional array of chars.</span></span></p>
+<p><span id="docs-internal-guid-f099e4b0-c455-6ec0-4e49-d93ef81c91d3" style="font-family: arial, helvetica, sans-serif; color: #000000;"><br><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">We will also have you create the following methods in this class.</span></span></p>
+<p><span id="docs-internal-guid-f099e4b0-c455-6ec0-4e49-d93ef81c91d3" style="font-family: arial, helvetica, sans-serif;"><br><span style="color: #000000;"><span style="font-size: 12pt; background-color: transparent; font-weight: bold; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">WhackAMole(int numAttempts, int gridDimension)</span><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;"> - Constructor for the game, specifies total number of whacks allowed, and the grid dimension.</span></span></span></p>
+<p></p>
+<p><span id="docs-internal-guid-f099e4b0-c455-6ec0-4e49-d93ef81c91d3" style="font-family: arial, helvetica, sans-serif;"><br><span style="color: #000000;"><em><span style="font-size: 12pt; background-color: transparent; font-weight: bold; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">boolean</span></em><span style="font-size: 12pt; background-color: transparent; font-weight: bold; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;"> place(int x, int y)</span><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;"> – Given a location, place a mole at that location. Return true if you can. </span><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">(Also update number of moles left.)</span><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span></p>
+<p></p>
+<p><span id="docs-internal-guid-f099e4b0-c455-6ec0-4e49-d93ef81c91d3" style="font-family: arial, helvetica, sans-serif;"><br><span style="color: #000000;"><em><span style="font-size: 12pt; background-color: transparent; font-weight: bold; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">void</span></em><span style="font-size: 12pt; background-color: transparent; font-weight: bold; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;"> whack(int x, int y)</span><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">
+ - &nbsp;Given a location, take a whack at that location. If that 
+location contains a mole, the score, number of attemptsLeft, and 
+molesLeft is updated</span><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">. If that location does not contain a mole, only attemptsLeft is updated.</span></span></span></p>
+<p></p>
+<p><span id="docs-internal-guid-f099e4b0-c455-6ec0-4e49-d93ef81c91d3" style="font-family: arial, helvetica, sans-serif;"><br><span style="color: #000000;"><em><span style="font-size: 12pt; background-color: transparent; font-weight: bold; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">void</span></em><span style="font-size: 12pt; background-color: transparent; font-weight: bold; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;"> printGridToUser()</span><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;"> – Print the grid without showing where the moles are. For every spot that has recorded a “whacked mole,” print out a W, </span><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">or * otherwise</span><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">.</span></span></span></p>
+<p></p>
+<p><span id="docs-internal-guid-f099e4b0-c455-6ec0-4e49-d93ef81c91d3" style="font-family: arial, helvetica, sans-serif;"><br><span style="color: #000000;"><em><span style="font-size: 12pt; background-color: transparent; font-weight: bold; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">void</span></em><span style="font-size: 12pt; background-color: transparent; font-weight: bold; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;"> printGrid()</span><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">
+ - &nbsp;Print the grid completely. This is effectively dumping the 2d 
+array on the screen. The places where the moles are should be printed as
+ an ‘M’. The places where the moles have been whacked should be printed 
+as a ‘W’. </span><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">The places that don’t have a mole should be printed as *.</span></span></span></p>
+<p><span id="docs-internal-guid-f099e4b0-c455-6ec0-4e49-d93ef81c91d3" style="font-family: arial, helvetica, sans-serif;"><br><strong><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap; color: #000000;">Putting it all together - main method</span></strong><br><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap; color: #000000;">In order to play this game you need to create a main method. </span><br><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap; color: #000000;">Begin by creating a 10 by 10 grid where you randomly place the moles. Place a total of 10 moles.</span><br><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap; color: #000000;">Now
+ allow the user (remember how to use Scanner?) to enter the x and y 
+coordinates of where they would like to take a whack. Tell them they 
+have a maximum of 50 attempts to get all the moles. </span><br><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap; color: #000000;">At
+ any point in the game, they can input coordinates of -1, -1 in order to
+ indicate that they are giving up. If the user gives up they get to see 
+the entire grid. &nbsp;</span><br><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;">The game ends if the user is able to uncover all the moles or if the user runs out of attempts. </span><span style="font-size: 12pt; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;"></span><span style="font-size: 12pt; color: #000000; background-color: transparent; font-variant-ligatures: normal; font-variant-east-asian: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;"><br></span></span></p>
+</div>
+
+  </div>
+  <div class="vert vert-1" data-id="block-v1:PennX+SD1x+2T2017+type@lti_consumer+block@9194988b0a054d94b567a57837d2ddd1">
+    <div class="xblock xblock-student_view xblock-student_view-lti_consumer xblock-initialized" data-runtime-class="LmsRuntime" data-init="LtiConsumerXBlock" data-course-id="course-v1:PennX+SD1x+2T2017" data-request-token="c12c87c840d411e797e40a90582a121a" data-runtime-version="1" data-usage-id="block-v1:PennX+SD1x+2T2017+type@lti_consumer+block@9194988b0a054d94b567a57837d2ddd1" data-block-type="lti_consumer">
+  <h2 class="problem-header">
+    LTI Consumer (External resource)
+</h2>
+
+    <div class="problem-progress">
+            (1.0 points possible)
+    </div>
+
+<div id="9194988b0a054d94b567a57837d2ddd1" class="lti_consumer lti-consumer-container" data-ask-to-send-username="True" data-ask-to-send-email="True">
+
+        <section class="wrapper-lti-link">
+            <p class="lti-link external">
+                    <button class="btn btn-pl-primary btn-base btn-lti-new-window" data-target="/courses/course-v1:PennX+SD1x+2T2017/xblock/block-v1:PennX+SD1x+2T2017+type@lti_consumer+block@9194988b0a054d94b567a57837d2ddd1/handler/lti_launch_handler">
+                        View resource in a new window <i class="icon fa fa-external-link"></i>
+                    </button>
+            </p>
+        </section>
+
+
+</div>
+
+</div>
+
+  </div>
+</div>
+
+</div>
+
+  </div>
+
+  <nav class="sequence-bottom" aria-label="Section">
+    <button class="sequence-nav-button button-previous">
+      <span class="icon fa fa-chevron-prev" aria-hidden="true"></span>
+      <span>Previous</span>
+    </button>
+    <button class="sequence-nav-button button-next">
+      <span>Next</span>
+      <span class="icon fa fa-chevron-next" aria-hidden="true"></span>
+    </button>
+  </nav>
+</div>
+
+</div>
+
+        </main>
+    </section>
+
+    <section class="courseware-results-wrapper">
+      <div id="loading-message" aria-live="polite" aria-relevant="all"></div>
+      <div id="error-message" aria-live="polite"></div>
+      <div class="courseware-results search-results" data-course-id="course-v1:PennX+SD1x+2T2017" data-lang-code="en"></div>
+    </section>
+
+  </div>
+</div>
+<div class="container-footer">
+    <div class="course-license">
+      
+
+
+    © <span class="license-text">All Rights Reserved</span>
+
+    </div>
+</div>
+
+<div id="accessibile-confirm-modal" class="modal" aria-hidden="true">
+  <div class="inner-wrapper" role="dialog" aria-labelledby="accessibile-confirm-title">
+    <button class="close-modal">
+      <span class="icon fa fa-remove" aria-hidden="true"></span>
+      <span class="sr">
+        Close
+      </span>
+    </button>
+
+    <header>
+      <h2 id="accessibile-confirm-title">
+          Confirm
+        <span class="sr">,
+          modal open
+        </span>
+      </h2>
+    </header>
+    <div role="alertdialog" class="status message" tabindex="-1">
+        <p class="message-title"></p>
+    </div>
+    <hr aria-hidden="true">
+    <div class="actions">
+        <button class="dismiss ok-button">OK</button>
+        <button class="dismiss cancel-button" data-dismiss="leanModal">Cancel</button>
+    </div>
+  </div>
+  <a href="#accessibile-confirm-modal" rel="leanModal" id="confirm_open_button" style="display:none">open</a>
+</div>
+
+<script type="text/javascript">
+var accessible_confirm = function(message, callback) {
+    $("#accessibile-confirm-modal .cancel-button").click(function(){
+        $("#accessibile-confirm-modal .close-modal").click();
+    });
+    $("#accessibile-confirm-modal .ok-button").click(function(){
+        $("#accessibile-confirm-modal .close-modal").click();
+        callback();
+    });
+
+    accessible_modal("#accessibile-confirm-modal #confirm_open_button", "#accessibile-confirm-modal .close-modal", "#accessibile-confirm-modal", ".content-wrapper");
+    $("#accessibile-confirm-modal #confirm_open_button").click();
+    $("#accessibile-confirm-modal .message-title").html(message);
+};
+</script>
+
+
+      
+    </div>
+
+        
+
+
+
+<footer id="footer-edx-v3" role="contentinfo" aria-label="Page Footer">
+    <h2 class="sr footer-about-title">About edX</h2>
+    <div class="footer-content-wrapper">
+      <div class="footer-logo">
+          <a href="https://www.edx.org/">
+            <img alt="edX Home Page" src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/logo-footer.png">
+          </a>
+      </div>
+
+      <div class="site-details">
+          <nav class="site-nav" aria-label="About edX">
+            <ul class="about-links">
+                <li class="list-item">
+                  <a href="https://www.edx.org/about-us">About</a>
+                </li>
+                <li class="list-item">
+                  <a href="https://www.edx.org/enterprise">edX for Business</a>
+                </li>
+                <li class="list-item">
+                  <a href="https://www.edx.org/blog">Blog</a>
+                </li>
+                <li class="list-item">
+                  <a href="https://www.edx.org/news-announcements">News</a>
+                </li>
+                <li class="list-item">
+                  <a href="https://support.edx.org/">Help Center</a>
+                </li>
+                <li class="list-item">
+                  <a href="https://www.edx.org/contact">Contact</a>
+                </li>
+                <li class="list-item">
+                  <a href="https://www.edx.org/careers">Careers</a>
+                </li>
+                <li class="list-item">
+                  <a href="https://www.edx.org/donate">Donate</a>
+                </li>
+            </ul>
+          </nav>
+          <nav class="legal-notices" aria-label="Legal">
+            <ul class="legal-links">
+                <li class="list-item">
+                  <a href="https://www.edx.org/edx-terms-service">Terms of Service &amp; Honor Code</a>
+                </li>
+                <li class="list-item">
+                  <a href="https://www.edx.org/edx-privacy-policy">Privacy Policy</a>
+                </li>
+                <li class="list-item">
+                  <a href="https://www.edx.org/accessibility">Accessibility Policy</a>
+                </li>
+                <li class="list-item">
+                  <a href="https://www.edx.org/sitemap">Sitemap</a>
+                </li>
+                <li class="list-item">
+                  <a href="https://www.edx.org/media-kit">Media Kit</a>
+                </li>
+            </ul>
+          </nav>
+
+
+          <p class="copyright">© 2012-2017 edX Inc.  All rights reserved
+ except where noted.  EdX, Open edX and the edX and Open EdX logos are 
+registered trademarks or trademarks of edX Inc.
+           | 粤ICP备17044299号-2
+	  </p>
+
+          <div class="openedx-link">
+            <a href="http://open.edx.org/" title="Powered by Open edX">
+              <img alt="Powered by Open edX" src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/edx-openedx-logo-tag.png" width="140">
+            </a>
+          </div>
+      </div>
+
+      <div class="external-links">
+        <ul class="social-media-links">
+            <li class="list-item">
+                <a href="http://www.facebook.com/EdxOnline" class="sm-link external" title="Facebook" rel="noreferrer">
+                    <span class="icon fa fa-facebook-square" aria-hidden="true"></span>
+                    <span class="sr">Like edX on Facebook</span>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="https://twitter.com/edXOnline" class="sm-link external" title="Twitter" rel="noreferrer">
+                    <span class="icon fa fa-twitter" aria-hidden="true"></span>
+                    <span class="sr">Follow edX on Twitter</span>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="https://www.youtube.com/user/edxonline?sub_confirmation=1" class="sm-link external" title="Youtube" rel="noreferrer">
+                    <span class="icon fa fa-youtube" aria-hidden="true"></span>
+                    <span class="sr">Subscribe to the edX YouTube channel</span>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="http://www.linkedin.com/company/edx" class="sm-link external" title="LinkedIn" rel="noreferrer">
+                    <span class="icon fa fa-linkedin-square" aria-hidden="true"></span>
+                    <span class="sr">Follow edX on LinkedIn</span>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="https://plus.google.com/+edXOnline" class="sm-link external" title="Google+" rel="noreferrer">
+                    <span class="icon fa fa-google-plus-square" aria-hidden="true"></span>
+                    <span class="sr">Follow edX on Google+</span>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="http://www.reddit.com/r/edx" class="sm-link external" title="Reddit" rel="noreferrer">
+                    <span class="icon fa fa-reddit" aria-hidden="true"></span>
+                    <span class="sr">Subscribe to the edX subreddit</span>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="mobile-app-links">
+            <li class="list-item">
+                <a href="https://itunes.apple.com/us/app/edx/id945480667?mt=8" class="app-link external">
+                    <img alt="Download the edX mobile app from the Apple App Store" src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/app_store_badge_135x40.svg">
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="https://play.google.com/store/apps/details?id=org.edx.mobile" class="app-link external">
+                    <img alt="Download the edX mobile app from Google Play" src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/google_play_badge_45.png">
+                </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+</footer>
+
+  
+
+    <link href="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/lms-footer-edx.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+  </div>
+
+  
+  
+  <script type="text/javascript" src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/jquery_003.js"></script><script id="" type="text/javascript">var iCookieLengthDays=90,sCookieName="prod.edx.utm",sSourceParameterName="utm_source",sMediumParameterName="utm_medium",sCampaignParameterName="utm_campaign",sTermParameterName="utm_term",sContentParameterName="utm_content",sCookieDomain="edx.org",_getQueryStringValue=function(d){for(var c=document.location.search.substring(1).split("\x26"),a=0;a<c.length;a++){var b=c[a].split("\x3d");if(d.toLowerCase()==b[0].toLowerCase())return b[1]}},_setCookie=function(d,c,a){var b=new Date;a*=864E5;b.setTime(b.getTime()+
+a);document.cookie=d+"\x3d"+c+"; expires\x3d"+b.toGMTString()+"; path\x3d/; domain\x3d."+sCookieDomain+";"},sSourceValue=_getQueryStringValue(sSourceParameterName),sMediumeValue=_getQueryStringValue(sMediumParameterName),sCampaignValue=_getQueryStringValue(sCampaignParameterName),sTermValue=_getQueryStringValue(sTermParameterName),sContentValue=_getQueryStringValue(sContentParameterName);
+if(sSourceValue||sMediumeValue||sCampaignValue||sTermValue||sContentValue){var oCookieContent={utm_source:sSourceValue,utm_medium:sMediumeValue,utm_campaign:sCampaignValue,utm_term:sTermValue,utm_content:sContentValue,created_at:(new Date).getTime()};_setCookie(sCookieName,JSON.stringify(oCookieContent),iCookieLengthDays)};</script><script id="gtm-scroll-tracking" type="text/javascript">(function(h,l,a){function q(){if(!h.querySelector||!h.body.getBoundingClientRect)return!1;a.dataLayerName=a.dataLayerName||"dataLayer";a.distances=a.distances||{};u();r(l,"scroll",y(u,500))}function v(k,a,f,b,d){var e;for(e=0;e<a.length;e++){var c=parseInt(a[e],10),g="%"!==f?c+d:c/100*b+d,c=c+f;g<=b+d&&(k[c]=g)}return k}function w(a,g){var k=parseInt(a,10),b=g/k,d=[],e;for(e=1;e<b+1;e++)d.push(e*k);return d}function u(){var k=x(a.bottom),g=x(a.top);var f=h.body;var b=h.documentElement;f=Math.max(f.scrollHeight,
+f.offsetHeight,b.clientHeight,b.scrollHeight,b.offsetHeight);g&&(f-=g);k&&(f=k-(g||0));f-=5;var b=g||0,d=z()||{},e=[],c=[],m;if(a.distances.percentages&&(a.distances.percentages.each&&(e=e.concat(a.distances.percentages.each)),a.distances.percentages.every))for(m=0;m<a.distances.percentages.every.length;m++)e=w(a.distances.percentages.every[m],100),e=c.concat(e);if(a.distances.pixels&&(a.distances.pixels.each&&(c=c.concat(a.distances.pixels.each)),a.distances.pixels.every))for(m=0;m<a.distances.pixels.every.length;m++){var A=
+w(a.distances.pixels.every[m],f);c=c.concat(A)}d=v(d,e,"%",f,b);f=d=v(d,c,"px",f,b);var b=void 0!==l.pageXOffset,d="CSS1Compat"===(h.compatMode||""),b=b?l.pageYOffset:d?h.documentElement.scrollTop:h.body.scrollTop,b=parseInt(b,10),d=parseInt,c="CSS1Compat"===h.compatMode?h.documentElement:h.body,c=c.clientHeight,b=b+d(c,10),n;for(n in f)if(d=f[n],b>d&&!p[n]&&d<(k||Infinity)&&d>(g||0))if(p[n]=!0,d=n,c=l.GoogleAnalyticsObject,"undefined"===typeof l[a.dataLayerName]||a.forceSyntax)if("function"===typeof l[c]&&
+"function"===typeof l[c].getAll&&2!==a.forceSyntax)l[c]("send","event",a.category,d,a.label,{nonInteraction:1});else"undefined"!==typeof l._gaq&&1!==a.forceSyntax&&l._gaq.push(["_trackEvent",a.category,d,a.label,0,!0]);else l[a.dataLayerName].push({event:"scrollTracking",attributes:{distance:d,label:a.label}})}function x(a){if("number"===typeof a||parseInt(a,10))return parseInt(a,10);try{var k=1===a.nodeType?a:h.querySelector(a);return t(k)}catch(f){}}function y(a,g){var k,b,d,e=null,c=0,h=function(){c=
+new Date;e=null;d=a.apply(k,b)};return function(){var f=new Date;c||(c=f);var m=g-(f-c);k=this;b=arguments;0>=m?(clearTimeout(e),e=null,c=f,d=a.apply(k,b)):e||(e=setTimeout(h,m));return d}}function r(a,g,f){if(a.addEventListener)a.addEventListener(g,f);else if(a.attachEvent)a.attachEvent("on"+g,function(b){f.call(a,b)});else if("undefined"===typeof a["on"+g]||null===a["on"+g])a["on"+g]=function(b){f.call(a,b)}}function t(a){a=a.getBoundingClientRect().top;var k=void 0!==l.pageYOffset?l.pageYOffset:
+(h.documentElement||h.body.parentNode||h.body).scrollTop;return a+k}var p={};!a.distances.percentages||!a.distances.percentages.every||a.distances.percentages.every instanceof Array||(a.distances.percentages.every=[a.distances.percentages.every]);!a.distances.pixels||!a.distances.pixels.every||a.distances.pixels.every instanceof Array||(a.distances.pixels.every=[a.distances.pixels.every]);var z=function(a){function g(){var d,e,c;f={};if(a.each)for(c=0;c<a.each.length;c++){var b=a.each[c];p[b]||(d=
+h.querySelector(b))&&(f[b]=t(d))}if(a.every)for(c=0;c<a.every.length;c++){b=a.every[c];var g=h.querySelectorAll(b);if(g.length&&!p[b+":"+(g.length-1)])for(e=0;e<g.length;e++){var k=b+":"+e;p[k]||(d=g[e],f[k]=t(d))}}}if(a){var f={},b=0;g();return function(){var a={},e;b++;10<b&&(g(),b=0);for(e in f)a[e]=f[e];return a}}}(a.distances.elements);"loading"!==h.readyState?q():h.addEventListener?r(h,"DOMContentLoaded",q):r(l,"load",q)})(document,window,{forceSyntax:!1,dataLayerName:!1,distances:{percentages:{each:[],
+every:[20]},pixels:{each:[],every:[]},elements:{each:[],every:[]}},top:null,bottom:null,category:"Scroll Tracking",label:document.location.pathname});</script>
+  <script type="text/javascript" src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/jquery.js"></script>
+
+  <script type="text/javascript" src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/codemirror-compressed.js"></script>
+
+  
+    <script type="text/javascript" src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/lms-courseware.js" charset="utf-8"></script>
+
+
+  
+
+
+
+<script type="text/javascript">
+    // Fast Preview was introduced in 2.5. However, it
+    // causes undesirable flashing/font size changes when
+    // MathJax is used for interactive preview (equation editor).
+    // Setting processSectionDelay to 0 (see below) fully eliminates
+    // fast preview, but to reduce confusion, we are also setting
+    // the option as displayed in the context menu to false.
+    // When upgrading to 2.6, check if this variable name changed.
+    window.MathJax = {
+      menuSettings: {CHTMLpreview: false}
+    };
+</script>
+
+<script type="text/x-mathjax-config;executed=true">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [
+        ["\\(","\\)"],
+        ['[mathjaxinline]','[/mathjaxinline]']
+      ],
+      displayMath: [
+        ["\\[","\\]"],
+        ['[mathjax]','[/mathjax]']
+      ]
+    }
+  });
+</script>
+<script type="text/x-mathjax-config;executed=true">
+
+  // In order to eliminate all flashing during interactive
+  // preview, it is necessary to set processSectionDelay to 0
+  // (remove delay between input and output phases). This
+  // effectively disables fast preview, regardless of
+  // the fast preview setting as shown in the context menu.
+  MathJax.Hub.processSectionDelay = 0;
+
+  MathJax.Hub.signal.Interest(function(message) {
+    if(message[0] === "End Math") {
+        set_mathjax_display_div_settings();
+    }
+  });
+  function set_mathjax_display_div_settings() {
+    $('.MathJax_Display').each(function( index ) {
+      this.setAttribute('tabindex', '0');
+      this.setAttribute('aria-live', 'off');
+      this.removeAttribute('role');
+      this.removeAttribute('aria-readonly');
+    });
+  }
+</script>
+
+
+<!-- This must appear after all mathjax-config blocks, so it is after the imports from the other templates.
+     It can't be run through static.url because MathJax uses crazy url introspection to do lazy loading of
+     MathJax extension libraries -->
+<script type="text/javascript" src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/MathJax.js"></script>
+
+
+
+  
+    
+      <script type="text/javascript" src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/courseware_factory.js"></script>
+    <script type="text/javascript">
+        (function (require) {
+            require(['js/courseware/courseware_factory'], function (CoursewareFactory) {
+                
+    CoursewareFactory();
+  
+            });
+        }).call(this, require || RequireJS.require);
+    </script>
+
+
+
+  <script type="text/javascript">
+    var $$course_id = "course\u002Dv1:PennX+SD1x+2T2017";
+  </script>
+
+<script>
+function LtiConsumerXBlock(runtime, element) {
+    $(function ($) {
+        // Adapted from leanModal v1.1 by Ray Stone - http://finelysliced.com.au
+        // Dual licensed under the MIT and GPL
+        // Renamed leanModal to iframeModal to avoid clash with platform-provided leanModal
+        // which removes the href attribute from iframe elements upon modal closing
+        $.fn.extend({
+            iframeModal: function (options) {
+                var $trigger = $(this);
+                var modal_id = $trigger.data("target");
+                var defaults = {top: 100, overlay: 0.5, closeButton: null};
+                var overlay_id = (modal_id + '_lean-overlay').replace('#', '');
+                var overlay = $("<div id='" + overlay_id + "' class='lean-overlay'></div>");
+                $("body").append(overlay);
+                options = $.extend(defaults, options);
+                return this.each(function () {
+                    var o = options;
+                    $(this).click(function (e) {
+                        var $modal = $(modal_id);
+                        // Set iframe src attribute to launch LTI provider
+                        $modal.find('iframe').attr('src', $modal.data('launch-url'));
+                        $("#" + overlay_id).click(function () {
+                            close_modal(modal_id)
+                        });
+                        $(o.closeButton).click(function () {
+                            close_modal(modal_id)
+                        });
+                        var modal_height = $(modal_id).outerHeight();
+                        var modal_width = $(modal_id).outerWidth();
+                        $("#" + overlay_id).css({"display": "block", opacity: 0});
+                        $("#" + overlay_id).fadeTo(200, o.overlay);
+                        $(modal_id).css({
+                            "display": "block"
+                        });
+                        $(modal_id).fadeTo(200, 1);
+                        $(modal_id).attr('aria-hidden', false);
+                        $('body').css('overflow', 'hidden');
+
+                        e.preventDefault();
+
+                        /* Manage focus for modal dialog */
+                        /* Set focus on close button */
+                        $(o.closeButton).focus();
+
+                        /* Redirect close button to iframe */
+                        $(o.closeButton).on('keydown', function (e) {
+                           if (e.which === 9) {
+                               e.preventDefault();
+                               // This is a workaround due to Firefox triggering focus calls oddly.
+                               setTimeout(function () {
+                                   $modal.find('iframe')[0].contentWindow.focus();
+                               }, 1);
+                           }
+                        });
+
+                        /* Redirect non-iframe tab to close button */
+                        var $inputs = $('select, input, textarea, button, a').filter(':visible').not(o.closeButton);
+                        $inputs.on('focus', function(e) {
+                            e.preventDefault();
+                            $(options.closeButton).focus();
+                        });
+                    });
+                });
+                function close_modal(modal_id) {
+                    var $modal = $(modal_id);
+                    $('select, input, textarea, button, a').off('focus');
+                    $("#" + overlay_id).fadeOut(200);
+                    $modal.css({"display": "none"});
+                    $modal.attr('aria-hidden', true);
+                    $modal.find('iframe').attr('src', '');
+                    $('body').css('overflow', 'auto');
+                    $trigger.focus();
+                }
+            }
+        });
+
+        var $element = $(element);
+        var $ltiContainer = $element.find('.lti-consumer-container');
+        var askToSendUsername = $ltiContainer.data('ask-to-send-username') == 'True';
+        var askToSendEmail = $ltiContainer.data('ask-to-send-email') == 'True';
+
+        // Apply click handler to modal launch button
+        $element.find('.btn-lti-modal').iframeModal({top: 200, closeButton: '.close-modal'});
+
+        // Apply click handler to new window launch button
+        $element.find('.btn-lti-new-window').click(function(){
+            var launch = true;
+
+            // If this instance is configured to require username and/or email, ask user if it is okay to send them
+            // Do not launch if it is not okay
+            if(askToSendUsername && askToSendEmail) {
+                launch = confirm(gettext("Click OK to have your username and e-mail address sent to a 3rd party application.\n\nClick Cancel to return to this page without sending your information."));
+            } else if (askToSendUsername) {
+                launch = confirm(gettext("Click OK to have your username sent to a 3rd party application.\n\nClick Cancel to return to this page without sending your information."));
+            } else if (askToSendEmail) {
+                launch = confirm(gettext("Click OK to have your e-mail address sent to a 3rd party application.\n\nClick Cancel to return to this page without sending your information."));
+            }
+
+            if (launch) {
+                window.open($(this).data('target'));
+            }
+        });
+    });
+}
+
+</script>
+<script src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/vertical_student_view.js" type="application/javascript"></script>
+
+
+
+  
+
+
+    <!-- begin segment footer -->
+    <script type="text/javascript">
+        $(window).load(function() {
+            analytics.identify(
+                "6803422",
+                {
+                    email: "ouedinous20@gmail.com",
+                    username: "ouedinous20"
+                },
+                {
+                    integrations: {
+                        // Disable MailChimp because we don't want to update the user's email
+                        // and username in MailChimp on every page load. We only need to capture
+                        // this data on registration/activation.
+                        MailChimp: false
+                    }
+                }
+            );
+        });
+    </script>
+    <!-- end segment footer -->
+
+  <script type="text/javascript" src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/noreferrer.js" charset="utf-8"></script>
+  <script type="text/javascript" src="Homework%20Assignment%201:%20WhackAMole%20%7C%20Homework%20Assignment%201:%20WhackAMole%20%7C%20SD1x%20Courseware%20%7C_files/navigation.js" charset="utf-8"></script>
+  
+
+
+
+
+
+
+<script>
+  (function () {
+    var sample_rate = 0.05;
+    var roll = Math.floor(Math.random() * 100)/100;
+    var onloadBeaconSent = false;
+
+    if(roll < sample_rate){
+      $(window).load(function() {
+        setTimeout(function(){
+          var t = window.performance.timing;
+
+          var data = {
+            event: "onload",
+            value: t.loadEventEnd - t.navigationStart,
+            page: window.location.href,
+          };
+
+          if (!onloadBeaconSent) {
+            $.ajax({method: "POST", url: "/performance", data: data});
+          }
+          onloadBeaconSent = true;
+        }, 0);
+      });
+    }
+  }());
+</script>
+<div style="display: none; visibility: hidden;"><script type="text/javascript">var iCookieLength=30,sCookieName="prod.edx.affiliate_id",sSourceParameterName="utm_source",sMediumParameterName="utm_medium",sPartnerValue="affiliate_partner",sCookieDomain="edx.org",_getQueryStringValue=function(d){for(var c=document.location.search.substring(1).split("\x26"),b=0;b<c.length;b++){var a=c[b].split("\x3d");if(d.toLowerCase()==a[0].toLowerCase())return a[1]}},_setCookie=function(d,c,b){var a=new Date;a.setTime(a.getTime()+864E5*b);document.cookie=d+"\x3d"+c+"; expires\x3d"+a.toGMTString()+
+"; path\x3d/; domain\x3d."+sCookieDomain+";"};_getQueryStringValue(sSourceParameterName)&&_getQueryStringValue(sMediumParameterName)===sPartnerValue&&_setCookie(sCookieName,_getQueryStringValue(sSourceParameterName),iCookieLength);</script></div><div style="display: none; visibility: hidden;">
+<script>!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1601661033380488");fbq("track","PageView");</script>
+<noscript></noscript>
+</div><div id="reader-feedback" class="sr" aria-live="polite"></div><div id="lean_overlay"></div><div style="display: none; opacity: 0;" class="tooltip"></div><div id="undefined_lean-overlay" class="lean-overlay"></div></body></html>
+<!-- Performance beacon for onload times -->
